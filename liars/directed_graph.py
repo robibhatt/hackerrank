@@ -69,4 +69,10 @@ class Directed_Graph:
 
     def get_inner_edges(self, u):
         return self.graph_dict[u][self.inward]
+
+    def get_edge_weight(self, u,v):
+        if v in self.graph_dict[u][self.outward].keys():
+            return self.graph_dict[u][self.outward][v]
+        else:
+            return None
     
