@@ -2,7 +2,6 @@
 
 
 
-
 # code snippet for illustrating input/output
 
 inp = raw_input()
