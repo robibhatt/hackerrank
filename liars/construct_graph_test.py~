@@ -1,0 +1,10 @@
+import construct_graph
+
+def test_initialize():
+    graph = construct_graph.initialize_graph(100)
+    distances = graph.bellman_ford(0)
+    for v in distances.keys():
+        assert v == distances[v]
+    print "passed test_initialize"
+
+test_initialize()
