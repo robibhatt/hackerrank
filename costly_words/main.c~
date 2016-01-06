@@ -1,0 +1,97 @@
+#include <math.h>
+#include <stdio.h>
+#include <string.h>
+#include <stdlib.h>
+#include <assert.h>
+#include <limits.h>
+#include <stdbool.h> 
+
+long unsigned power(){
+  /*unsigned long prime = 1000000007UL;
+  unsigned long a = base % prime;
+  unsigned long b = exponent % (prime - 1);
+  if (b == 0)
+    return 1UL;
+  if (a == 0)
+    return 0UL;
+  if (a == 1)
+    return 1UL;
+  if (b == 1)
+    return (a % prime);
+  if (b == 2)
+    return ((a * a) % prime);
+  unsigned long temp = power(a, b/2);
+  if (b % 2 == 0)
+    return ((temp * temp) % prime);
+  else
+  return ((temp * temp * a) % prime); */
+  long unsigned bob;
+  return bob;
+       
+}
+
+int main(){
+  power();
+  /*unsigned long a = 10UL;
+  unsigned long b = 10UL;
+  unsigned long big = power(a, b);
+  printf("%lu", power(10LU, 10LU)); */
+  /*unsigned long prime = 1000000007UL;
+  unsigned long d;
+  scanf("%lu",&d);
+  unsigned long a[d+1];
+  for(unsigned long i = 0; i < d+1; i++){
+    scanf("%lu",&a[i]);
+  }
+  unsigned long t;
+  scanf("%lu", &t);
+  unsigned long n,m;
+  unsigned long values[d+1];
+  unsigned long last_value;
+  unsigned long next_value;
+  for(unsigned long test = 0; test < t; test++){
+    scanf("%lu", &n);
+    scanf("%lu", &m);
+    for(unsigned long i = 0; i < d+1; i++){
+      last_value = power(m-d+i, n);
+      for(unsigned long j = 0; j < i; j++){
+	next_value = ((m - d + i) * (last_value - values[j])) % prime;
+	values[j] = last_value;
+	last_value = next_value;
+      }
+      values[i] = last_value;
+    }
+    unsigned long answer = 0;
+    for(unsigned long i = 0; i < d+1; i++){
+      answer += (a[i] * values[i]) % prime;
+      answer = answer % prime;
+    }
+    printf("%lu\n", answer);
+    }*/
+
+  return 0;
+}
+
+/*unsigned long product(unsigned long number1, unsigned long number2){
+  unsigned long prime = 1000000007LU;
+  unsigned long a = number1 % prime;
+  unsigned long b = number2 % (prime);
+  if (b == 0)
+    return 0;
+  if (a == 0)
+    return 0;
+  if (a == 1)
+    return b;
+  if (b == 1)
+    return a;
+  if (b == 2)
+    return ((2 * a) % prime);
+  unsigned long temp = product(a, b/2);
+  if (b % 2 == 0)
+    return ((temp + temp) % prime);
+  else
+    return ((((temp + temp) % prime) + a) % prime);
+    } */
+
+//unsigned long power(unsigned long base, unsigned long exponent){
+
